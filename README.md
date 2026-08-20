@@ -26,6 +26,20 @@ Admin-only uptime monitor with Telegram alerts (UptimeRobot-style).
 - Search and filter (name, URL, UP/DOWN, today / last 7 days)
 - Public status page (`status.php`) – no login required
 
+## Screenshots
+
+| Login | Dashboard |
+|:---:|:---:|
+| ![Login page](docs/screenshots/01-login.png) | ![Dashboard](docs/screenshots/02-dashboard.png) |
+
+| Monitors | Public status page |
+|:---:|:---:|
+| ![Monitors list](docs/screenshots/03-monitors.png) | ![Status page](docs/screenshots/04-status-page.png) |
+
+| Monitoring logs | Telegram alerts |
+|:---:|:---:|
+| ![Logs](docs/screenshots/05-logs.png) | ![Alerts](docs/screenshots/06-alerts.png) |
+
 ## Folder structure
 ```
 website_monitoring_system/
