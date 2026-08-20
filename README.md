@@ -5,12 +5,12 @@ Admin-only uptime monitor with Telegram alerts (UptimeRobot-style).
 1. 把项目放在 `C:\xampp1\htdocs\website_monitoring_system`
 2. 复制 `config/database.example.php` 为 `config/database.php`，填入数据库账号
 3. 启动 XAMPP 的 Apache + MySQL
-3. 打开 http://localhost/website_monitoring_system/
-4. 安装向导里数据库一般是：`localhost` / `root` / 密码留空
-5. 创建管理员账号并登录
-6. 添加网站（例如 `https://www.google.com`）
-7. 点 Dashboard 的 **Run checks now**，或按下面配置每分钟自动检测
-8. 在 **Settings** 填写 Telegram Bot Token 和 Chat ID，即可在网站 DOWN / 恢复 UP 时收到通知
+4. 打开 http://localhost/website_monitoring_system/
+5. 安装向导里数据库一般是：`localhost` / `root` / 密码留空
+6. 创建管理员账号并登录
+7. 添加网站（例如 `https://www.google.com`）
+8. 点 Dashboard 的 **Run checks now**，或按下面配置每分钟自动检测
+9. 在 **Settings** 填写 Telegram Bot Token 和 Chat ID，即可在网站 DOWN / 恢复 UP 时收到通知
 
 忘记密码：打开 `forgot-password.php`，恢复密钥在 `config/config.php` 的 `RECOVERY_KEY`。
 
@@ -54,7 +54,7 @@ website_monitoring_system/
 
 If you prefer phpMyAdmin:
 1. Import `database/schema.sql`
-2. Edit `config/database.php`
+2. Copy `config/database.example.php` to `config/database.php` and edit credentials
 3. Insert an admin row with a hashed password, then create `config/installed.lock`
 4. Easier path: just use `install.php`
 
@@ -144,3 +144,4 @@ To reinstall: delete `config/installed.lock`, drop the `website_monitoring` data
 - Sessions are used after login
 - `config/` and `includes/` are blocked by `.htaccess`
 - The cron script requires a secret key when opened in a browser
+- `config/database.php` is gitignored — never commit production credentials
