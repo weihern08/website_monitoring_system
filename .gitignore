@@ -1,0 +1,10 @@
+# Local / server secrets
+config/database.php
+config/installed.lock
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
