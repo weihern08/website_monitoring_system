@@ -159,3 +159,7 @@ To reinstall: delete `config/installed.lock`, drop the `website_monitoring` data
 - `config/` and `includes/` are blocked by `.htaccess`
 - The cron script requires a secret key when opened in a browser
 - `config/database.php` is gitignored — never commit production credentials
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
